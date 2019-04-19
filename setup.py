@@ -5,7 +5,7 @@ with open("README.md", "r") as fp:
 
 setuptools.setup(
     name="oppaipy",
-    version="1.0.0",
+    version="1.0.1",
     author="Syrin",
     author_email="syrin@syrin.me",
     description="A simple object-oriented python3 wrapper around the python bindings of oppai-ng",
