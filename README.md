@@ -37,6 +37,38 @@ There is some extra syntactic sugar to make it shorter for simple usage however
 (7.8976135253906, 727.3976135253906)
 ```
 
+## API
+```python
+# Setting parameters
+Calculator.set_beatmap(beatmap_path)
+Calculator.set_mods(mods)
+Calculator.set_combo(combo)
+Calculator.set_accuracy_percent(accuracy)
+Calculator.set_accuracy(count_100, count_50)
+Calculator.set_misses(misses)
+Calculator.set_score_version(score_version)
+Calculator.set_base_ar(ar)
+Calculator.set_base_od(od)
+Calculator.set_base_cs(cs)
+Calculator.set_base_hp(hp)
+Calculator.reset()
+
+# Calculating
+Calculator.calculate()
+
+# Getting values
+Calculator.pp
+Calculator.aim_pp
+Calculator.speed_pp
+Calculator.acc_pp
+Calculator.stars
+Calculator.aim_stars
+Calculator.speed_stars
+
+# Cleanup
+Calculator.close()
+```
+
 ## Why should I use this?
 You get the speed of the C bindings with a pythonic object interface.
 
