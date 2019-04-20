@@ -52,7 +52,7 @@ class Calculator(AbstractContextManager):
             reset = False
 
         # Read into
-        with open(beatmap_path, "r") as fp:
+        with open(beatmap_path, "r", encoding="utf-8") as fp:
             self._beatmap_data = fp.read()
         if reset:
             self.reset()
