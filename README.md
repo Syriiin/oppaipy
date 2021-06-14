@@ -21,7 +21,8 @@ There are 5 steps to using oppaipy:
 >>> calc = oppaipy.Calculator()
 >>> calc.set_beatmap("/path/to/beatmap")
 >>> calc.set_misses(1)
->>> calc.set_combo(2354)
+>>> calc.set_accuracy(7, 0)
+>>> calc.set_combo(2358)
 >>> calc.calculate()
 >>> print(calc.pp)
 727.3976135253906
@@ -33,7 +34,7 @@ There is some extra syntactic sugar to make it shorter for simple usage however
 ### Simple example
 ```python
 >>> import oppaipy
->>> with oppaipy.Calculator("/path/to/beatmap", misses=1) as calc:
+>>> with oppaipy.Calculator("/path/to/beatmap", misses=1, count_100=7, combo=2358) as calc:
 ...     print(calc.calculate())
 (7.8976135253906, 727.3976135253906)
 ```
